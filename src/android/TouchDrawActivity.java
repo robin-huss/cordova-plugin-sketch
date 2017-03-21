@@ -439,6 +439,10 @@ public class TouchDrawActivity extends Activity {
         protected void onSizeChanged(int w, int h, int oldw, int oldh) {
             super.onSizeChanged(w, h, oldw, oldh);
 
+            if (mBitmap == null) {
+                return;   
+            }
+            
             float newWidth = w;
             float newHeight = h;
 
