@@ -470,6 +470,10 @@ public class TouchDrawActivity extends Activity {
 
         @Override
         protected void onDraw(Canvas canvas) {
+            if (mBitmap == null) {
+                    
+            }
+            
             canvas.drawColor(Color.argb(a, r, g, b));
             canvas.drawBitmap(mBitmap, 0, 0, mBitmapPaint);
             canvas.drawPath(mPath, mPaint);
